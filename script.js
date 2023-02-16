@@ -1,11 +1,20 @@
 console.log('Hello');
 
 let songs=[
-    {songname:'Tu Maan Meri Jaan - King', filePath:'songs/1.mp3', coverPath:'covers/1.jpg'},
-    {songname:'Do Pal - Veer Zaara', filePath:'songs/2.mp3', coverPath:'covers/2.jpg'},
+    {songname:'Koun Tujhe - M.S.Dhoni', filePath:'songs/1.mp3', coverPath:'covers/1.jpg'},
+    {songname:'Tum Hi Ho - Aashiqui 2', filePath:'songs/2.mp3', coverPath:'covers/2.jpg'},
     {songname:'Main Yahaan Hoon - Veer Zaara', filePath:'songs/3.mp3', coverPath:'covers/3.jpg'},
-    {songname:'Humko Dewana Kar Gye', filePath:'songs/4.mp3', coverPath:'covers/4.jpg'}
-
+    {songname:'Rasiya - Brahmāstra', filePath:'songs/4.mp3', coverPath:'covers/4.jpg'},
+    {songname:'Raanjhana Ve', filePath:'songs/5.mp3', coverPath:'covers/5.jpg'},
+    {songname:'Dua Ban Ja - Akhil Sachdeva', filePath:'songs/6.mp3', coverPath:'covers/6.jpg'},
+    {songname:'Dhunde Akhiyan - Jabariya Jodi', filePath:'songs/7.mp3', coverPath:'covers/7.jpg'},
+    {songname:'Aawara Shaam Hai', filePath:'songs/8.mp3', coverPath:'covers/8.jpg'},
+    {songname:'Labon Pe Naam - Radhe Shyam', filePath:'songs/9.mp3', coverPath:'covers/9.jpg'},
+    {songname:'Rabba - Heropanti', filePath:'songs/10.mp3', coverPath:'covers/10.jpg'},
+    //{songname:'Tu Maan Meri Jaan - King', filePath:'songs/11.mp3', coverPath:'covers/11.jpg'},
+    //{songname:'Do Pal - Veer Zaara', filePath:'songs/12.mp3', coverPath:'covers/12.jpg'},
+    //{songname:'Main Yahaan Hoon - Veer Zaara', filePath:'songs/13.mp3', coverPath:'covers/13.jpg'},
+    //{songname:'Humko Dewana Kar Gye', filePath:'songs/13.mp3', coverPath:'covers/13.jpg'},
 ]
 
 // Initialise the Variables
@@ -43,7 +52,7 @@ songs.forEach((e,i)=>{
     const html = `<div id="songItem">
     <img src="./covers/${i+1}.jpg" alt="${i+1}">
     <span class="songName">${e.songname}</span>
-    <span class="songlistplay"><span class="timeStamp"> <i id='${i+1}' class="far songItemPlay  fa-play-circle"></i></span></span>
+    <i id='${i+1}' class="far songItemPlay fa-play-circle"></i>
 </div>`;
     songItemContainer.insertAdjacentHTML('beforeend', html);
 })

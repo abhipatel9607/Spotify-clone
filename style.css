@@ -114,6 +114,9 @@ cursor: pointer;
 opacity: 0;
 transition: opacity 0.4s ease-in;
 }
+.songItemPlay{
+    margin: 0 23px;
+}
 
 /* Media Query */
 @media screen and (max-width: 758px) {
@@ -136,3 +139,31 @@ transition: opacity 0.4s ease-in;
         background: black;
     }
   }
+  @media screen and (max-width: 570px) {
+    h2{
+        font-size: 22px;
+    }
+    .songName{
+        font-size: 14px;
+        width: 100%;
+    }
+    .songItemPlay{
+        margin: 0 18px 0 0;
+    }
+    #songItem img{
+        margin: 0 18px 0 18px;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .songName{
+        font-size: 13px;
+        width: 140%;
+    }
+    .songItemPlay{
+        margin: 0 13px 0 0;
+    }
+    #songItem img{
+        margin: 0 13px 0 13px;
+    }
+  }
+ 
