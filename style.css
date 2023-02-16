@@ -90,6 +90,17 @@ border-radius: 34px;
 width: 80vw;
 cursor: pointer;
 }
+#gif{
+    width: 80px;
+    position: absolute;
+    top: 35%;
+    left: 10vw;
+}
+#masterSongName{
+    position: absolute;
+    top: 60%;
+    left: 10vw;  
+}
 .icons{
     margin-top: 14px;
 }
@@ -97,11 +108,31 @@ cursor: pointer;
     cursor: pointer;
 }
 .songInfo{
-    position: absolute;
-    left: 10vw;
     font-family: 'Varela Round', sans-serif;
 }
 .songInfo img{
 opacity: 0;
 transition: opacity 0.4s ease-in;
 }
+
+/* Media Query */
+@media screen and (max-width: 758px) {
+    .songInfo{
+        top: 28%;
+    }
+    .bottom{
+        justify-content: flex-end;
+        row-gap: 20px;
+    }
+    #masterSongName{
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%,  -50%);
+    }
+    #gif{
+        top: 50%;
+    }
+    .container{
+        background: black;
+    }
+  }
