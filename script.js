@@ -1,5 +1,3 @@
-console.log('Hello');
-
 let songs=[
     {songname:'Koun Tujhe - M.S.Dhoni', filePath:'songs/1.mp3', coverPath:'covers/1.jpg'},
     {songname:'Tum Hi Ho - Aashiqui 2', filePath:'songs/2.mp3', coverPath:'covers/2.jpg'},
